@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>via CEP</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <form class="form-control" onsubmit="return false;" action="" method="post">
+            <div class="row">
+
+                <!-- LINHA 1 -->
+
+                <div class="col-xl-10 p-3">
+                    <input class="form-control" type="number" id="cep" name="cep"
+                        placeholder="Insira seu número de CEP">
+                </div>
+                <div class="col-xl-2 p-3">
+                    <button class="btn">Pesquisar</button>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <hr>
+
+            <div class="row" disabled>
+                <div class="col-xl-4 p-3">
+                    <label for="uf" class="pb-1">Estado</label>
+                    <select readonly="readonly" class="form-control" name="uf" id="uf" aria-disabled="true">
+                        <option value=""></option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+
+
+                <!-- <div class="col-xl-4 p-3">
+                    <label for="uf" class="pb-1">Estado</label>
+                    <input class="form-control" type="text" name="uf" id="uf" disabled>
+                </div> -->
+                <div class="col-xl-4 p-3">
+                    <label for="cidade" class="pb-1">Cidade</label>
+                    <input class="form-control" type="text" name="cidade" id="cidade" disabled>
+                </div>
+                <div class="col-xl-4 p-3">
+                    <label for="bairro" class="pb-1">Bairro</label>
+                    <input class="form-control" type="text" name="bairro" id="bairro" disabled>
+                </div>
+            </div>
+            <div class="row" disabled>
+                <div class="col-xl-4 p-3">
+                    <label for="rua" class="pb-1">Rua</label>
+                    <input class="form-control" type="text" name="rua" id="rua" disabled>
+                </div>
+                <div class="col-xl-4 p-3">
+                    <label for="ibge" class="pb-1">Ibge</label>
+                    <input class="form-control" type="text" name="ibge" id="ibge" disabled>
+                </div>
+                <div class="col-xl-4 p-3">
+                    <label for="ddd" class="pb-1">DDD</label>
+                    <input class="form-control" type="text" name="ddd" id="ddd" disabled>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- readonly no lugar do disabled - para enviar ao back-end os campos -->
+
+
+</body>
+
+<script src="./scripts/app.js"></script>
+
+</html>

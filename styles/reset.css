@@ -1,0 +1,15 @@
+@media (max-width: 700px){
+    #cep{
+        width: 50%;
+    }
+    button{
+        margin-top: -160px;
+        margin-left: 170px;
+        width: 150px !important;
+    }
+
+    hr{
+        margin-top: -50px
+    }
+    
+};
